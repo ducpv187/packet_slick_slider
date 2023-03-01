@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" crossorigin as="font">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" type="text/css" href="common/css/main.css">
     <title> Packet Slick Slider </title>
   </head>
@@ -20,22 +20,16 @@
             <div class="d__flex">
               <div class="img__logo">
                <a href="/" class="link__logo">
-                <img src="./common/images/logo.svg" alt="logo" class="img">
+                <img src="https://images.viblo.asia/638d6d11-9f15-42c4-9993-2061608174ff.png" alt="logo" class="img">
                </a>
               </div>
               <div class="header__btn">
-                <button class="btn btn-purple h-sp">
-                  事例ダウンロード
-                </button>
-                <button class="btn btn-purple h-pc">
-                  事例DL
-                </button>
-                <button class="btn btn-white">
-                  新規登録
-                </button>
-                <button class="btn btn-blue">
-                  ログイン
-                </button>
+                <a href="https://www.youtube.com/watch?v=m5OsFyZD5hs" target="_blank" class="btn btn-purple d-inline-block mr-2">
+                 Link tham khao
+                </a>
+                <a href="https://kenwheeler.github.io/slick/" target="_blank" class="btn btn-purple d-inline-block">
+                  Link thư viện 
+                </a>                
               </div>
             </div>
           </div>
@@ -43,46 +37,55 @@
       </header>
       <div class="main">
         <div class="container">
-          
+          <div class="image-slider">
+            <div class="image-item">
+              <div class="image">
+                <img src="./common/images/cat_img1.png" alt="">
+              </div>
+              <div class="image-title">this is demo1</div>
+            </div>
+            <div class="image-item">
+              <div class="image">
+                <img src="./common/images/cat_img2.png" alt="">
+              </div>
+              <div class="image-title">this is demo2</div>
+            </div>
+            <div class="image-item">
+              <div class="image">
+                <img src="./common/images/cat_img3.png" alt="">
+              </div>
+              <div class="image-title">this is demo3</div>
+            </div>
+            <div class="image-item">
+              <div class="image">
+                <img src="./common/images/cat_img4.png" alt="">
+              </div>
+              <div class="image-title">this is demo4</div>
+            </div>
+            <div class="image-item">
+              <div class="image">
+                <img src="./common/images/cat_img2.png" alt="">
+              </div>
+              <div class="image-title">this is demo5</div>
+            </div>
+          </div>
         </div>
        </div>
-      <footer class="footer">
-        <ul class="footer__list">
-          <li class="footer__list-items">
-            <a href="#">
-              運営会社
-            </a>
-          </li>
-          <li class="footer__list-items">
-            <a href="#">
-              運営会社
-            </a>
-          </li>
-          <li class="footer__list-items">
-            <a href="#">
-              プライバシーポリシー
-            </a>
-          </li>
-          <li class="footer__list-items">
-            <a href="#">
-              運営会社
-            </a>
-          </li>
-          <li class="footer__list-items">
-            <a href="#">
-              お問い合わせ
-            </a>
-          </li>
-          <li class="footer__list-items">
-            <a href="#">
-              運営会社
-            </a>
-          </li>
-        </ul>
-        <p class="footer__text">Copyright©2022 Makiyama brothers Inc.</p>
-      </footer>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- slick-slider -->
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- end slick-slider --> 
     <script src="./common/js/main.js"></script>
   </body> 
 </html>

@@ -1,18 +1,53 @@
 $(document).ready(function() {
-  $(".btn-blue").click(function() {
-    $(this).parents().find(".modal__popup").addClass('block');
-    $(this).parents().find(".modal__content").addClass('show');
-    $(this).parents().find(".modal__close").removeClass('show');
-  });
-  $(".modal_close").click(function() {
-    $(this).parents().find(".modal__popup").removeClass('block');
-    $(this).parent(".modal__content").removeClass('show'); 
-  });
-  $(".modal__content").click(function(e) {
-    e.stopPropagation(e);
-  });
-  $(".modal__popup").click(function() {
-    $(this).removeClass('block');
-    $(this).parents().find(".modal__content").removeClass('show');      
-  });
+  //packet slider
+  $('.image-slider').slick(
+    {
+      slidesToShow: 3, 
+      //soluong item hien thi tren scree
+      slidesToScroll: 1,
+      //click next-prev 1 items
+      infinite: true,
+      //skick chay vô tận 
+      arrows: true,
+      //hien thi nut prev-next
+      autoplay: true,
+      autoplaySpeed: 2000,
+      // tu dong chay 2s/1lan
+      draggable: true,
+      // bat buoc phai bam prev-next, ko cho touch keo item
+      prevArrow:
+      "<button type='button' class='slick-prev'></button>",
+      nextArrow:
+      "<button type='button' class='slick-next'></button>",
+      // custom arrow next-prev
+      dots: true,
+      // cham 
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600, //max-width
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+          }
+        }
+      ]
+    }
+  );
 });
