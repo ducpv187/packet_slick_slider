@@ -11,8 +11,10 @@ $(document).ready(function() {
       arrows: true,
       //hien thi nut prev-next
       autoplay: true,
-      autoplaySpeed: 2000,
+      // autoplaySpeed: 2000,
       // tu dong chay 2s/1lan
+      speed: 2000,
+      // chuyen dong muot ma hon
       draggable: true,
       // bat buoc phai bam prev-next, ko cho touch keo item
       prevArrow:
