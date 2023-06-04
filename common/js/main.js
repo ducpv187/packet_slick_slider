@@ -1,6 +1,7 @@
 $(document).ready(function() {
   //packet slider
-  $('.image-slider').slick(
+  //demo-1
+  $('.main-1 .image-slider').slick(
     {
       slidesToShow: 3, 
       //soluong item hien thi tren scree
@@ -52,4 +53,15 @@ $(document).ready(function() {
       ]
     }
   );
+
+  //demo-2
+  $('.main-2 .center').slick({
+    centerMode: true,
+    infinite: true,
+    centerPadding: '0px',
+    speed: 500,
+    variableWidth: true,
+    autoplaySpeed: 2500,
+    autoplay: true
+  }); 
 });
