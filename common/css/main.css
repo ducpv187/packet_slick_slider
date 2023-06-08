@@ -795,3 +795,8 @@ ul {
 .p_top .main-2 .slick-prev::before {
   content: "←";
 }
+.p_top .main-2 .slide-btn {
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
