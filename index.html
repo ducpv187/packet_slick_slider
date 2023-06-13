@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
+    <!-- cach 1: dung vs cdn -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+
+    <!-- cach 2: Down thu vien slick -->
+    <!-- <link rel="stylesheet" href="./common/css/vendor/slick-theme.css"> -->
+    <!-- link slick-theme.css nên comment lại để tránh lỗi khi custom (vdu mũi tên,...) -->
+    <link rel="stylesheet" href="./common/css/vendor/slick.css">
     <link rel="stylesheet" type="text/css" href="common/css/main.css">
     <title> Packet Slick Slider </title>
   </head>
@@ -35,7 +37,7 @@
       </div>
     </header>
     <main class="page p_top">     
-      <!-- <div class="main-1">
+      <div class="main-1">
         <div class="container">
           <div class="image-slider">
             <div class="image-item">
@@ -70,7 +72,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="main-2">
         <div class="slider center slider-for">
           <div class="clip">
@@ -98,20 +100,17 @@
         </div>
       </div>
     </main>
-    <!-- slick-slider -->
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <!-- C1: Cdn - slick-slider -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- end slick-slider --> 
+
+    <!-- C2: Cdn - slick-slider -->
+    <script src="./common/js/vendor/jquery-1.11.1.min.js"></script>
+    <!-- <script src="./common/js/vendor/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="./common/js/vendor/slick.min.js"></script>
+    
     <script src="./common/js/main.js"></script>
   </body> 
 </html>

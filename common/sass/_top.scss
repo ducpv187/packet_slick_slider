@@ -23,54 +23,54 @@
       margin: 0 10px;
     }    
      //common prev-next
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    z-index: 9999;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 5rem;
-    height: 5rem;
-    z-index: 2;
-    background-color: transparent;
-  }
-  .slick-prev {
-    left: 0;
-    border: none;
-    background: url("../images/slider_arrow_prev.png") 0 0 / cover no-repeat;
-  }
-  .slick-next {
-    right: 0;   
-    border: none;
-    background: url("../images/slider_arrow_next.png") 0 0 / cover no-repeat;
-  }
-  .slick-dots {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50% , 0);
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    gap: 0 10px;
-    button {
-      font-size: 0;
-      // để chuyền từ số -> dấu chấm tròn
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       border: none;
-      outline: none;
-      transition: all 0.2s linear;
+      z-index: 9999;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 5rem;
+      height: 5rem;
+      z-index: 2;
+      background-color: transparent;
     }
-  }
-  .slick-active {
-    button {
-      background-color: rgb(0, 255, 191);
+    .slick-prev {
+      left: 0;
+      border: none;
+      background: url("../images/slider_arrow_prev.png") 0 0 / cover no-repeat;
     }
-  }
+    .slick-next {
+      right: 0;   
+      border: none;
+      background: url("../images/slider_arrow_next.png") 0 0 / cover no-repeat;
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50% , 0);
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      gap: 0 10px;
+      button {
+        font-size: 0;
+        // để chuyền từ số -> dấu chấm tròn
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        transition: all 0.2s linear;
+      }
+    }
+    .slick-active {
+      button {
+        background-color: rgb(0, 255, 191);
+      }
+    }
   }
 
   .main-2 {
