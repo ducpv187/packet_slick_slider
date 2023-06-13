@@ -18,6 +18,8 @@ $(document).ready(function() {
       // chuyen dong muot ma hon
       draggable: true,
       // bat buoc phai bam prev-next, ko cho touch keo item
+      // variableWidth: true,
+      // lệnh này để xóa bỏ các thuộc tính width  mặc định khi chia slidesToShow -> custom lại theo css
       prevArrow:
       "<button type='button' class='slick-prev'></button>",
       nextArrow:
